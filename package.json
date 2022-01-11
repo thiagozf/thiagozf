@@ -1,0 +1,23 @@
+{
+  "name": "thiagozf",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagozf/thiagozf.git"
+  },
+  "author": "Thiago Zanivan <hi@thiagozf.com> (https://thiagozf.com/)",
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/thiagozf/thiagozf#readme",
+  "bugs": {
+    "url": "https://github.com/thiagozf/thiagozf/issues"
+  },
+  "scripts": {
+    "build": "node build-chat.js"
+  },
+  "dependencies": {
+    "date-fns": "^2.22.1",
+    "got": "^11.8.2",
+    "js-quantities": "^1.7.6"
+  }
+}
