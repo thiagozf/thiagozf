@@ -78,61 +78,61 @@
     @keyframes msg-1 {
       0% {
         opacity: 0;
-        transform: translate(10px, 5px);
+        transform: translate(0px, 5px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 0);
+        transform: translate(0px, 0);
       }
     }
     @keyframes msg-2 {
       0% {
         opacity: 0;
-        transform: translate(10px, 53px);
+        transform: translate(0px, 53px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 48px);
+        transform: translate(0px, 48px);
       }
     }
     @keyframes msg-3 {
       0% {
         opacity: 0;
-        transform: translate(10px, 125px);
+        transform: translate(0px, 125px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 120px);
+        transform: translate(0px, 120px);
       }
     }
     @keyframes msg-4 {
       0% {
         opacity: 0;
-        transform: translate(10px, 197px);
+        transform: translate(0px, 197px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 192px);
+        transform: translate(0px, 192px);
       }
     }
     @keyframes msg-5 {
       0% {
         opacity: 0;
-        transform: translate(10px, 245px);
+        transform: translate(0px, 245px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 240px);
+        transform: translate(0px, 240px);
       }
     }
     @keyframes msg-6 {
       0% {
         opacity: 0;
-        transform: translate(10px, 293px);
+        transform: translate(0px, 293px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 288px);
+        transform: translate(0px, 288px);
       }
     }
     @media (prefers-color-scheme: dark) {
@@ -210,7 +210,7 @@
   </defs>
 
   <!-- typing 1 -->
-  <g transform="translate(10, 0)" class="typing-1">
+  <g transform="translate(0, 0)" class="typing-1">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -229,13 +229,13 @@
   </g>
 
   <!-- Hey there! I'm Thiago -->
-  <g transform="translate(10, 0)" class="msg-1 bubble">
+  <g transform="translate(0, 0)" class="msg-1 bubble">
     <rect width="236" height="42" rx="7.5" />
     <text x="15" y="27">Hey there! I'm Thiago <tspan class="emoji">👋</tspan></text>
   </g>
 
   <!-- typing 2 -->
-  <g transform="translate(10, 48)" class="typing-2">
+  <g transform="translate(0, 48)" class="typing-2">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -254,14 +254,14 @@
   </g>
 
   <!-- From Brazil... -->
-  <g transform="translate(10, 48)" class="msg-2">
+  <g transform="translate(0, 48)" class="msg-2">
     <rect width="338" height="66.1302" rx="7.5" class="bubble" />
     <text x="15" y="27">I live in Florianópolis, Brazil <tspan class="emoji">📍🇧🇷</tspan></text>
     <text x="15" y="50">It's {degF}°F ({degC}°C) and <tspan class="emoji">{weatherEmoji}</tspan> here today...</text>
   </g>
 
   <!-- typing 3 -->
-  <g transform="translate(10, 120)" class="typing-3">
+  <g transform="translate(0, 120)" class="typing-3">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -280,14 +280,14 @@
   </g>
 
   <!-- Work ... -->
-  <g transform="translate(10, 120)" class="msg-3">
+  <g transform="translate(0, 120)" class="msg-3">
     <rect width="478" height="66.1302" rx="7.5" class="bubble" />
     <text x="15" y="27">I’m a Software Engineer and work at <a xlink:href="https://way.live/">Way</a> since 2019.</text>
     <text x="15" y="50">It's been {psTime} already. Time flies, huh? <tspan class="emoji">😅</tspan></text>
   </g>
 
   <!-- typing 4 -->
-  <g transform="translate(10, 192)" class="typing-4">
+  <g transform="translate(0, 192)" class="typing-4">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -306,7 +306,7 @@
   </g>
 
   <!-- Social networks -->
-  <g transform="translate(10, 192)" class="msg-4">
+  <g transform="translate(0, 192)" class="msg-4">
     <rect width="510" height="42" rx="7.5" class="bubble" />
     <text x="15" y="27">
       Looking for my articles? Read here: <a xlink:href="https://thiagozf.com/">https://thiagozf.com</a>
@@ -314,7 +314,7 @@
   </g>
 
   <!-- typing 5 -->
-  <g transform="translate(10, 240)" class="typing-5">
+  <g transform="translate(0, 240)" class="typing-5">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -333,13 +333,13 @@
   </g>
 
   <!-- Thanks -->
-  <g transform="translate(10, 240)" class="msg-5">
+  <g transform="translate(0, 240)" class="msg-5">
     <rect width="235" height="42" rx="7.5" class="bubble" />
     <text x="15" y="27">Thanks for stopping by!</text>
   </g>
 
   <!-- typing 6 -->
-  <g transform="translate(10, 288)" class="typing-6">
+  <g transform="translate(0, 288)" class="typing-6">
     <rect width="69.7276" height="42" rx="7.5" class="bubble" />
     
     <circle cx="19.4778" cy="20.9773" r="5.02275" fill="#999999">
@@ -358,7 +358,7 @@
   </g>
 
   <!-- Have a great... -->
-  <g transform="translate(10, 288)" class="msg-6">
+  <g transform="translate(0, 288)" class="msg-6">
     <rect width="{dayBubbleWidth}" height="42" rx="7.5" class="bubble" />
     <text x="15" y="27">Have a great {todayDay} <tspan class="emoji">✌</tspan></text>  
   </g>
