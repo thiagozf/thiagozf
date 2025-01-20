@@ -2,11 +2,14 @@ const fs = require("fs");
 const got = require("got");
 const qty = require("js-quantities");
 const formatDistance = require("date-fns/formatDistance");
+const format = require("date-fns/format");
 
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 const WEATHER_LOCATION_ID = "35956";
 const WEATHER_API_URL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${WEATHER_LOCATION_ID}?apikey=${WEATHER_API_KEY}`;
-const WORK_AT_SINCE = new Date(2019, 11, 10);
+const WORK_AT = "RD Station";
+const WORK_AT_SITE = "https://rdstation.com";
+const WORK_AT_SINCE = new Date(2023, 10, 1);
 
 const emojis = {
   1: "☀️",
@@ -50,13 +53,14 @@ const dayBubbleWidths = {
   Sunday: 230,
 };
 
-// Time working at Way
+// Time working
 const today = new Date();
 const todayDay = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(
-  today
+  today,
 );
-
-const psTime = formatDistance(WORK_AT_SINCE, today, { addSuffix: false });
+const workTime = formatDistance(WORK_AT_SINCE, today, { addSuffix: false });
+const workAtSite = WORK_AT_SITE;
+const workAtLocation = WORK_AT;
 
 got(WEATHER_API_URL)
   .then((response) => {
@@ -74,9 +78,12 @@ got(WEATHER_API_URL)
       data = data.replace("{degF}", degF);
       data = data.replace("{degC}", degC);
       data = data.replace("{weatherEmoji}", emojis[icon]);
-      data = data.replace("{psTime}", psTime);
       data = data.replace("{todayDay}", todayDay);
       data = data.replace("{dayBubbleWidth}", dayBubbleWidths[todayDay]);
+      data = data.replace("{workAtSince}", format(WORK_AT_SINCE, "yyyy"));
+      data = data.replace("{workAtSite}", WORK_AT_SITE);
+      data = data.replace("{workAt}", WORK_AT);
+      data = data.replace("{workTime}", workTime);
 
       data = fs.writeFile("chat.svg", data, (err) => {
         if (err) {
