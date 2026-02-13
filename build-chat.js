@@ -9,7 +9,7 @@ const WEATHER_LOCATION_ID = "35956";
 const WEATHER_API_URL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${WEATHER_LOCATION_ID}?apikey=${WEATHER_API_KEY}`;
 const WORK_AT = "RD Station";
 const WORK_AT_SITE = "https://rdstation.com";
-const WORK_AT_SINCE = new Date(2023, 10, 1);
+const WORK_AT_SINCE = new Date(2023, 2, 1);
 
 const emojis = {
   1: "☀️",
